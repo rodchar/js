@@ -14,8 +14,12 @@ public class JavaApplication1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+I
         try {
+
+// Make sure to start JavaDB in the Services window. 
+// Also, add the client derby jar that's inside Glassfish. 
+
             Class.forName("org.apache.derby.jdbc.ClientDriver").newInstance();
             String url = "jdbc:derby://localhost:1527/sample";
             Connection con = DriverManager.getConnection(url, "app", "app");
